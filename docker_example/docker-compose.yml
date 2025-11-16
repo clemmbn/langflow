@@ -3,8 +3,6 @@ services:
     image: langflowai/langflow:latest # or another version tag on https://hub.docker.com/r/langflowai/langflow
     user: root
     pull_policy: always               # set to 'always' when using 'latest' image
-    ports:
-      - "7860:7860"
     depends_on:
       - postgres
     environment:
